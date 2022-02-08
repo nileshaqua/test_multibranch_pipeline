@@ -1,10 +1,12 @@
 pipeline{
-	agent any{
+	agent any
+	stages
+{
 		stage("build"){
-				echo 'building stage successfull'
-			      }
+			echo 'building stage successfull'
+}
 		stage("test"){
-				echo 'testing stage successful'
-			     }
-		 }
-	}
+			echo 'testing stage successfulccc
+}
+}
+}
