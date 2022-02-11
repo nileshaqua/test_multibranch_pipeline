@@ -1,10 +1,15 @@
-pipeline{
-         agent
-         stages{
-         stage("Build"){
-              steps{ 'echo "This is build stage"'
-                      sh docker version
-                   }
-                  }
-               }
-           }
+pipeline { 
+  
+   agent any
+
+   stages {
+   
+     stage('Install Dependencies') { 
+        steps { 
+           sh 'docker version' 
+        }
+     }
+
+  }
+
+}
