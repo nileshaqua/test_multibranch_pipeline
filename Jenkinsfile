@@ -18,7 +18,7 @@ pipeline {
 
          stage("Deploy application") { 
          steps { 
-           sh 'docker build -y myimage .'
+           sh 'docker build -t myimage .'
          }
 
      }
