@@ -1,11 +1,10 @@
 pipeline{
-	agents any
-		stages{
-			stage("test"){
-                                      steps{
-						echo 'test is successful'
-
-					   }
-				      }
-		      }
-	}
+         agents
+         stages{
+         stage("Build"){
+              steps{ 'echo "This is build stage"'
+                      sh docker version
+                   }
+                  }
+               }
+           }
